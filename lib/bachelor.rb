@@ -15,7 +15,8 @@ def get_contestant_name(data, occupation)
   contestant_name = ""
   data.each do |season, contestant|
     contestant.each do |contestant, data|
-      
+      contestant_name = contestant
+    end
   end
 end
 
