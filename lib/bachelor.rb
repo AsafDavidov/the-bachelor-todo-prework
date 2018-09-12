@@ -18,6 +18,7 @@ def get_contestant_name(data, occupation)
       contestant_name = contestant["age"]
     end
   end
+  contestant_name
 end
 
 def count_contestants_by_hometown(data, hometown)
