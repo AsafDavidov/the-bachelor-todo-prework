@@ -54,7 +54,6 @@ def get_average_age_for_season(data, season)
   all_ages_array = []
   data["#{season}"].each_with_index do |contestant, index|
     all_ages_array[index] = contestant["age"].to_i
-    end
   end
-  hometown_count
+  all_ages_array
 end
