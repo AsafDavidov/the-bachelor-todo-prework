@@ -51,12 +51,9 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  
-  data["#{season}"].select do |season, contestant|
-    contestant.each do |contestant_info, data|
-      if contestant_info["hometown"] == hometown
-        hometown_count += 1
-      end
+  all_ages_array = []
+  data["#{season}"].each_with_index do |contestant, index|
+    all_ages_array[index] = contestant["age"]
     end
   end
   hometown_count
