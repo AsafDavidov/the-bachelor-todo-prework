@@ -1,8 +1,7 @@
 def get_first_name_of_season_winner(data, season)
   # code here
   winner = ""
-  if data["#{season}"]["status"] == "Winner"
-  end
+  if data["#{season}"].each
   winner = data["#{season}"]["status"]
   winner
 end
